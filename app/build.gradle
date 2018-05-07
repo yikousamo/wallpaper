@@ -30,6 +30,12 @@ android {
             path "CMakeLists.txt"
         }
     }
+    // 消除协程试验性质的警告
+    kotlin {
+        experimental {
+            coroutines 'enable'
+        }
+    }
 }
 
 dependencies {
