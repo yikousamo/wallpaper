@@ -13,10 +13,11 @@
         android:scaleType="fitXY"
         />
 
-    <android.support.design.widget.FloatingActionButton
+    <Button
         android:id="@+id/showSettingBtn"
-        android:layout_width="50dp"
+        android:layout_width="200dp"
         android:layout_height="50dp"
+        android:text="设置壁纸"
         android:visibility="invisible"
         android:layout_gravity="end|bottom"
         android:layout_margin="20dp" />

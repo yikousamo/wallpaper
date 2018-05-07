@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Rect
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -77,6 +78,12 @@ class PreviewActivity : BaseActivity() {
                     preImg.postDelayed({
                         preImg.visibility = View.VISIBLE
                     },200)
+                }
+
+                override fun onLoadFailed(e: java.lang.Exception?, errorDrawable: Drawable?) {
+                    super.onLoadFailed(e, errorDrawable)
+                    Toast.makeText(this@PreviewActivity, "加载大图失败", Toast.LENGTH_SHORT).show()
+                    finish()
                 }
             })
         }
