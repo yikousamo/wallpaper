@@ -58,6 +58,8 @@ Kotlin
 Demo下载
 ===
 
+![效果](wallpager.gif)
+
 壁纸APPDemo: [https://github.com/yikousamo/wallpaper](https://github.com/yikousamo/wallpaper)
 
 
