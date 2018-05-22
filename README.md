@@ -22,10 +22,10 @@ Kotlin
 2. 除主工程外，每个模块以aar包的形式向其他模块提供业务/功能
 3. 每个模块分为四个部分，这四个部分分别又是4个arr。
  
- -. Service: 业务接口定义
- -. ServiceImpl: 业务接口具体实现
- -. ViewService: UI接口定义
- -. ViewServiceImpl: UI接口具体实现
+-. Service: 业务接口定义 
+-. ServiceImpl: 业务接口具体实现
+-. ViewService: UI接口定义
+-. ViewServiceImpl: UI接口具体实现
 
 4. 所有业务统一管理，针对到**每个**APP，在主工程Application中注册具体实现
 5. 脚本打包，代码管理
