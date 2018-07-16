@@ -28,7 +28,7 @@ class HomeAdapter(var context: Context, var mDatas: MutableList<BusSpecifyCatego
     override fun onBindViewHolder(holder: HomeVH, position: Int) {
         with(holder.itemView){
             this?.homeItemImg?.let { img->
-                mDatas?.get(position)?.img_1024_768?.let {
+                mDatas?.get(position)?.url?.let {
                     url -> ImageLoader.loadImage(img, url)
                 }
             }
